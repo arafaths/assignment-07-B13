@@ -4,9 +4,9 @@ import FriendsList from '../../components/share/home/friendList/FriendsList';
 
 const Home = () => {
   return (
-    <div className='container mx-auto px-5'>
+    <div className="container mx-auto px-5 bg-gray-50">
       <Banner />
-      <FriendsList/>
+      <FriendsList />
     </div>
   );
 };

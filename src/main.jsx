@@ -7,6 +7,7 @@ import './index.css';
 import Home from './pages/homeSection/Home';
 import TimeLine from './pages/timeline/TimeLine';
 import Stats from './pages/stats/Stats';
+import FriendDetails from './pages/friendDetails/FriendDetails';
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/stats',
         element: <Stats/>
+      },
+      {
+        path: '/details/:id',
+        element: <FriendDetails/>
       }
     ]
   },
