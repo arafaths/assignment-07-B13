@@ -4,7 +4,7 @@ import { createBrowserRouter } from 'react-router';
 import { RouterProvider } from 'react-router/dom';
 import RootLayout from './layout/RootLayout';
 import './index.css';
-import Home from './pages/home/home';
+import Home from './pages/homeSection/Home';
 import TimeLine from './pages/timeline/TimeLine';
 import Stats from './pages/stats/Stats';
 
