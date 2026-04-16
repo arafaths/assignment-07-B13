@@ -4,7 +4,7 @@ import FriendsList from '../../components/share/home/friendList/FriendsList';
 
 const Home = () => {
   return (
-    <div className="container mx-auto px-5 bg-gray-50">
+    <div className="container mx-auto px-5 bg-gray-50 pt-25">
       <Banner />
       <FriendsList />
     </div>

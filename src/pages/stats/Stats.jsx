@@ -17,7 +17,7 @@ const Stats = () => {
   ];
 
   return (
-    <div className="bg-gray-50 container mx-auto p-8">
+    <div className="bg-gray-50 container mx-auto p-8 pt-25">
       <div className="max-w-3xl mx-auto">
         <p className="text-4xl text-gray-800 font-bold mb-5">Friendship Analytics</p>
         {timelineData.length === 0 ? (
