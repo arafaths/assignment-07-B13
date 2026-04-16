@@ -85,15 +85,15 @@ const FriendDetails = () => {
           </div>
 
           <div className="space-y-2">
-            <button className="w-full py-3 flex items-center justify-center gap-2 bg-white text-gray-700 font-semibold rounded-lg shadow-sm border border-gray-200 hover:bg-gray-50 transition">
+            <button className="w-full py-3 flex items-center justify-center gap-2 bg-white text-gray-700 font-semibold rounded-lg shadow-sm border border-gray-200 hover:bg-gray-50 transition cursor-pointer">
               <PiBellZBold size={18} />
               Snooze 2 weeks
             </button>
-            <button className="w-full py-3 flex items-center justify-center gap-2 bg-white text-gray-700 font-semibold rounded-lg shadow-sm border border-gray-200 hover:bg-gray-50 transition">
+            <button className="w-full py-3 flex items-center justify-center gap-2 bg-white text-gray-700 font-semibold rounded-lg shadow-sm border border-gray-200 hover:bg-gray-50 transition cursor-pointer">
               <LuArchive size={18} />
               Archive
             </button>
-            <button className="w-full py-3 flex items-center justify-center gap-2 bg-white text-red-500 font-semibold rounded-lg shadow-sm border border-gray-200 hover:bg-gray-50 transition">
+            <button className="w-full py-3 flex items-center justify-center gap-2 bg-white text-red-500 font-semibold rounded-lg shadow-sm border border-gray-200 hover:bg-gray-50 transition cursor-pointer">
               <RiDeleteBin5Line size={18} />
               Delete
             </button>
@@ -143,28 +143,28 @@ const FriendDetails = () => {
             <div className="grid grid-cols-3 gap-4">
               <button
                 onClick={() => handleAction('call', name)}
-                className="flex flex-col justify-center items-center gap-2 py-5 bg-gray-100 rounded-xl border border-gray-300 hover:border-emerald-500 hover:text-emerald-600 transition group"
+                className="flex flex-col justify-center items-center gap-2 py-5 bg-gray-100 rounded-xl border border-gray-300 hover:bg-green-500 hover:text-white transition group cursor-pointer"
               >
                 <TbPhoneCall size={25} />
-                <p className="text-gray-700 font-medium group-hover:text-emerald-600">
+                <p className="text-gray-700 font-medium group-hover:text-white">
                   Call
                 </p>
               </button>
               <button
                 onClick={() => handleAction('text', name)}
-                className="flex flex-col justify-center items-center gap-2 py-5 bg-gray-100 rounded-xl border border-gray-300 hover:border-emerald-500 hover:text-emerald-600 transition group"
+                className="flex flex-col justify-center items-center gap-2 py-5 bg-gray-100 rounded-xl border border-gray-300 hover:bg-blue-500 hover:text-white transition group cursor-pointer"
               >
                 <BiMessageDots size={25} />
-                <p className="text-gray-700 font-medium group-hover:text-emerald-600">
+                <p className="text-gray-700 font-medium group-hover:text-white">
                   Text
                 </p>
               </button>
               <button
                 onClick={() => handleAction('video', name)}
-                className="flex flex-col justify-center items-center gap-2 py-5 bg-gray-100 rounded-xl border border-gray-300 hover:border-emerald-500 hover:text-emerald-600 transition group"
+                className="flex flex-col justify-center items-center gap-2 py-5 bg-gray-100 rounded-xl border border-gray-300 hover:bg-red-500 hover:text-white transition group cursor-pointer"
               >
                 <PiVideoCameraBold size={25} />
-                <p className="text-gray-700 font-medium group-hover:text-emerald-600">
+                <p className="text-gray-700 font-medium group-hover:text-white">
                   Video
                 </p>
               </button>
