@@ -41,8 +41,8 @@ const FriendDetails = () => {
 
 
   return (
-    <div className="bg-gray-50 min-h-screen p-8">
-      <div className="max-w-4xl mx-auto grid grid-cols-3 gap-6">
+    <div className="bg-gray-50 min-h-screen p-8 pt-25">
+      <div className="max-w-4xl mx-auto md:grid md:grid-cols-3 gap-6">
         {/* Left site */}
         <div className="col-span-1 space-y-4">
           <div className="p-6 text-center bg-white rounded-xl shadow-lg border border-gray-100">
@@ -101,8 +101,8 @@ const FriendDetails = () => {
         </div>
 
         {/* Right site */}
-        <div className="col-span-2 space-y-6">
-          <div className="grid grid-cols-3 gap-4">
+        <div className="col-span-2 space-y-6 mt-5">
+          <div className="grid sm:grid-cols-3 gap-4">
             <div className="text-center space-y-2 py-4 bg-white rounded-lg shadow-sm border border-gray-100">
               <p className="text-2xl text-[#244D3F] font-bold">
                 {days_since_contact}
@@ -140,7 +140,7 @@ const FriendDetails = () => {
             <p className="text-xl text-[#244D3F] font-semibold">
               Quick Check-In
             </p>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid sm:grid-cols-3 gap-4">
               <button
                 onClick={() => handleAction('call', name)}
                 className="flex flex-col justify-center items-center gap-2 py-5 bg-gray-100 rounded-xl border border-gray-300 hover:bg-green-500 hover:text-white transition group cursor-pointer"

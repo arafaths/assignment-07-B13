@@ -8,11 +8,11 @@ const Footer = () => {
     <footer className="bg-[#244D3F]">
       <div className="container mx-auto text-white px-5 pt-15 pb-4">
         <div className="flex flex-col justify-center items-center space-y-3">
-          <h2 className="text-5xl font-bold">
+          <h2 className="text-4xl md:text-5xl font-bold">
             Keen
             <span className="font-normal">Keeper</span>
           </h2>
-          <p className="text-[#ffffffaa]">
+          <p className="text-[#ffffffaa] text-center">
             Your personal shelf of meaningful connections. Browse, tend, and
             nurture the relationships that matter most.
           </p>
@@ -42,9 +42,9 @@ const Footer = () => {
           </div>
         </div>
         <hr className="my-5 text-[#1A8862]" />
-        <div className="flex justify-between items-center">
-          <p>© 2026 KeenKeeper. All rights reserved.</p>
-          <div className="flex items-center gap-4">
+        <div className="flex flex-col md:flex-row md:justify-between items-center">
+          <p className='order-2 md:order-0 mt-2 md:mt-0'>© 2026 KeenKeeper. All rights reserved.</p>
+          <div className="flex items-center gap-4 order-1 md:order-0">
             <a href="">Privacy Policy</a>
             <a href="">Terms of Service</a>
             <a href="">Cookies</a>

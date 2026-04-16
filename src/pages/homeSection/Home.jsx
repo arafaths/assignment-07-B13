@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../../components/share/home/Banner';
-import FriendsList from '../../components/share/home/friendList/FriendsList';
+import FriendsList from '../../components/share/friendList/FriendsList';
 
 const Home = () => {
   return (

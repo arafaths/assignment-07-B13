@@ -27,7 +27,7 @@ const TimeLine = () => {
       <div className="max-w-3xl mx-auto">
         <p className="text-3xl text-gray-800 font-bold mb-5">Timeline</p>
 
-        <div className="space-y-3">
+        <div className="space-y-3 min-h-[60vh]">
           <div className="flex justify-between items-center">
             <Filter filter={filter} setFilter={setFilter} />
             <div className="flex">
@@ -43,8 +43,8 @@ const TimeLine = () => {
           {timelineData.length === 0 ? (
             <NoDocument/>
           ) : (
-            filtersData.map(data => (
-              <div className="flex gap-4 bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+            filtersData.map((data, index) => (
+              <div key={index} className="flex gap-4 bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                 <div className="w-9 h-9">
                   <img
                     src={
