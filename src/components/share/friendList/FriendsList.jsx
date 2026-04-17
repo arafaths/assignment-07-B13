@@ -12,7 +12,7 @@ const FriendsList = () => {
       {loading ? (
         <HashLoader className='mx-auto mt-10' />
       ) : (
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5">
           {friends.map(friend => (
             <FriendsProfile key={friend.id} friend={friend} />
           ))}

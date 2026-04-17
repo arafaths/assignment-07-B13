@@ -23,53 +23,63 @@ const TimeLine = () => {
   );
 
   return (
-    <div className="bg-gray-50 container mx-auto p-8 min-h-[50vh] pt-25">
-      <div className="max-w-3xl mx-auto">
-        <p className="text-3xl text-gray-800 font-bold mb-5">Timeline</p>
+    <div className="bg-gray-50 container mx-auto min-h-[50vh] pt-20 sm:pt-25">
+      <div className="px-4 sm:px-8 pb-8">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-2xl sm:text-3xl text-gray-800 font-bold mb-5">
+            Timeline
+          </p>
 
-        <div className="space-y-3 min-h-[60vh]">
-          <div className="flex justify-between items-center">
-            <Filter filter={filter} setFilter={setFilter} />
-            <div className="flex">
-              <input
-                type="text"
-                placeholder="Search by name..."
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-                className="w-full max-w-md px-4 py-2 border rounded-full outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-          </div>
-          {timelineData.length === 0 ? (
-            <NoDocument/>
-          ) : (
-            filtersData.map((data, index) => (
-              <div key={index} className="flex gap-4 bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-                <div className="w-9 h-9">
-                  <img
-                    src={
-                      data.action == 'call'
-                        ? Phone
-                        : data.action == 'text'
-                          ? Text
-                          : Video
-                    }
-                    alt="Video"
-                    className="w-full h-full"
-                  />
-                </div>
-                <div className="">
-                  <p className="text-base text-[#244D3F] font-semibold">
-                    {data.action.charAt(0).toUpperCase() + data.action.slice(1)}{' '}
-                    <span className="text-sm text-gray-500">
-                      with {data.name}
-                    </span>
-                  </p>
-                  <p className="text-sm text-gray-500">{data.date}</p>
-                </div>
+          <div className="space-y-3 min-h-[60vh]">
+            <div className="flex flex-col sm:flex-row justify-between items-center">
+              <div className="order-2 sm:order-0 mt-2 sm:mt-0">
+                <Filter filter={filter} setFilter={setFilter} />
               </div>
-            ))
-          )}
+              <div className="flex order-1 sm:order-0">
+                <input
+                  type="text"
+                  placeholder="Search by name..."
+                  value={search}
+                  onChange={e => setSearch(e.target.value)}
+                  className="w-full max-w-md px-3 sm:px-4 py-1 sm:py-2 border rounded-full outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+            {timelineData.length === 0 ? (
+              <NoDocument />
+            ) : (
+              filtersData.map((data, index) => (
+                <div
+                  key={index}
+                  className="flex gap-4 bg-white p-2 sm:p-4 rounded-lg shadow-sm border border-gray-100"
+                >
+                  <div className="w-9 h-9">
+                    <img
+                      src={
+                        data.action == 'call'
+                          ? Phone
+                          : data.action == 'text'
+                            ? Text
+                            : Video
+                      }
+                      alt="Video"
+                      className="w-full h-full"
+                    />
+                  </div>
+                  <div className="">
+                    <p className="text-base text-[#244D3F] font-semibold">
+                      {data.action.charAt(0).toUpperCase() +
+                        data.action.slice(1)}{' '}
+                      <span className="text-sm text-gray-500">
+                        with {data.name}
+                      </span>
+                    </p>
+                    <p className="text-sm text-gray-500">{data.date}</p>
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
         </div>
       </div>
     </div>
