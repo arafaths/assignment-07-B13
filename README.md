@@ -1,16 +1,51 @@
-# React + Vite
+# 📌 KeenKeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KeenKeeper is a simple and user-friendly web application that helps you stay connected with the people who matter most in your life.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+👉 https://keen-keeper-friendship.vercel.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 GitHub Repository
+👉 https://github.com/arafaths/assignment-07-B13
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Project Overview
+
+In our busy lives, we often lose touch with friends, family, and important connections.  
+**KeenKeeper** solves this problem by helping you track and manage your relationships in an organized and meaningful way.
+
+---
+
+## ✨ Features
+
+- 👥 Add and manage friends easily  
+- 📊 Track interaction status  
+- 🔔 Status indicators (On Track, Overdue, Almost Due)  
+- 📱 Fully responsive design  
+- 🎯 Clean and minimal user interface  
+
+---
+
+## 🛠️ Technologies Used
+
+- ⚛️ React  
+- 🔀 React Router  
+- 🎨 Tailwind CSS  
+- 🎯 React Icons  
+
+---
+
+## 👨‍💻 Author
+
+**MD. Arafat**  
+Frontend Developer  
+
+🔗 [GitHub](https://github.com/arafaths)  
+🔗 [LinkedIn](https://www.linkedin.com/in/arafaths/)
+
+---
